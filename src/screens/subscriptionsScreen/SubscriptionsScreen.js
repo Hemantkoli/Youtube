@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
 import VideoHorizontal from '../../components/videoHorizontal/VideoHorizontal.'
 import { getSubsciptionChannel } from '../../redux/actions/videos.action'
 import './subscriptions.scss'
@@ -9,7 +8,6 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 
 const SubscriptionsScreen = () => {
 
-const {query} = useParams()
 const dispatch = useDispatch()
 
 useEffect(()=>{

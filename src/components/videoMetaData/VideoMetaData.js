@@ -3,7 +3,6 @@ import './_videoMetaData.scss'
 import moment from 'moment'
 import numeral from 'numeral'
 import {MdThumbUp,MdThumbDown} from 'react-icons/md'
-import ShowMoreText from 'react-show-more-text'
 import { useDispatch, useSelector } from 'react-redux'
 import { getChannelDetails,checkSubscriptionStatus } from '../../redux/actions/channel.action'
 

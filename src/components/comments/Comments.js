@@ -24,14 +24,16 @@ const Comments = ({videoId,totalComments}) => {
     setText('')
   }
 
+  const user = useSelector(state => state.authReducer?.user)
+
   return (
     <div className='comments'>
       <p>{totalComments} Comments</p>
       <div className='comments__form d-flex w-100 my-2'>
-      <img className='rounded-circle mr-3' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVA_HrQLjkHiJ2Ag5RGuwbFeDKRLfldnDasw&usqp=CAU' alt=''/>
+      <img className='rounded-circle mr-3' src={user?.photoURL} alt='avatar'/>
       <form onSubmit={handleComment} className='d-flex flex-grow-1'>
         <input tyepe='text' className='flex-grow-1' placeholder='Write a comment...' value={text} onChange={e=>setText(e.target.value)}/>
-        <button className='border-0 p-2'>Comment</button>
+        <button className='border-0 p-2 mb-2'>Comment</button>
       </form>
       </div>
       <div className='comments__list'>

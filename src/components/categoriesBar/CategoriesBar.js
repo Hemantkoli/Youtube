@@ -5,18 +5,23 @@ import './_categoriesBar.scss'
 
 
 const keywords = [
-  "All",
-  "React.js",
-  "3111111111111",
-  "4111111111111",
-  "5111111111111",
-  "6111111111111",
-  "7111111111111",
-  "1111111111118",
-  "9111111111111",
-  "9111111111111",
-  "9111111111111",
-  "9111111111111",
+  'All',
+  'React js',
+  'Angular js',
+  'React Native',
+  'use of API',
+  'Redux',
+  'Music',
+  'Algorithm Art ',
+  'Guitar',
+  'Bengali Songs',
+  'Coding',
+  'Cricket',
+  'Football',
+  'Real Madrid',
+  'Gatsby',
+  'Poor Coder',
+  'Shwetabh',
 ]
 
 const CategoriesBar = () => {

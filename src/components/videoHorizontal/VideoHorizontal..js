@@ -28,8 +28,8 @@ const VideoHorizontal = ({video,searchScreen,subScreen}) => {
     }} = video
     
 
-  const isVideo = id.kind === !('youtube#channel' || subScreen)
-  useEffect(()=>{
+    const isVideo = !(id.kind === 'youtube#channel' || subScreen)
+    useEffect(()=>{
     const get_video_details =async()=>{
       const {data:{items}} = await request('/videos',{
         params:{
